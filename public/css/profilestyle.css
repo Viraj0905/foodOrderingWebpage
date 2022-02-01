@@ -1,0 +1,187 @@
+/* color */
+
+/* font-family: 'Baloo 2', cursive;
+font-family: 'Cabin', sans-serif; */
+*{
+  margin:0;
+  padding: 0;
+}
+.head{
+  background: #B80D57;
+  font-family: 'Baloo 2', cursive;
+color:#fff;
+padding: 10px;
+}
+.nav1{
+    background: #ecfbfc;
+height:10vh;
+}
+.nav1 ul li{
+  display: inline-block;
+  padding-top: 32px;
+}
+.nav1 a{
+  text-decoration: none;
+  color:#000;
+  padding:20px 10px 0;
+  text-align: justify;
+margin-top: 10px;
+}
+
+/* Profile Section */
+.profile{
+  height:30vh;
+  padding: 10px;
+  background: #f8fab8;
+}
+.profile-img {
+  border-radius: 8rem;
+  height:9rem;
+  position: absolute;
+  left:20px;
+}
+.profile .btn{
+position: relative;
+top:120px;
+left:230px;
+padding: 5px;
+text-transform: uppercase;
+font-weight: bold;
+background: #f8fab8;
+/* border: 2px dashed #ffac41; */
+text-align: center;
+font-size: 16px;
+border-radius: 5px;
+width: 8%;
+}
+.profile .btn:hover{
+   background: #ffac41;
+   transition: .5s;
+}
+.profile-detail {
+  position:relative;
+  left:64rem;
+  width:300px;
+  height:100px;
+  padding: 8px;
+  letter-spacing: 1px;
+}
+.profile-detail span{
+  font-weight: bold;
+}
+/* Section of Middle */
+
+.section{
+  font-family: 'Cabin', sans-serif;
+  display:inline-block;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+.food-Option{
+  position:absolute;
+left:20px;
+width:16rem;
+height:100vh;
+padding: 10px;
+
+}
+.food-Option .head1{
+  background: #ffac41;
+}
+.middle-section{
+  position:absolute;
+  left:290px;
+  width:46rem;
+height:130vh;
+    padding: 10px;
+}
+.last-add{
+  position:relative;
+  left:65rem;
+  width:18rem;
+  padding: 10px;
+}
+.btn1{
+  display: block;
+  font-family: 'Karla', sans-serif;
+  margin:30px;
+  padding: 10px;
+  background:#fff ;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid #ffa34d;
+  border-radius: 5px;
+}
+.btn1:hover{
+    background:#ffa34d ;
+    transition: .5s;
+}
+.display-food{
+  height:30vh;
+  width:45rem;
+}
+/* Order Section ........................................  */
+.Order {
+  padding: 0 0 10px 0;
+  width: 52%;
+  border: 1px solid #e9e1cc;
+  position: absolute;
+  top: 27%;
+  left: 23%;
+}
+.OrderHoldbox button {
+  width: 100%;
+  font-weight: bold;
+}
+.order-section {
+  background: #fff;
+  padding: 10px;
+}
+.order-item .content{
+display: inline-block;
+padding: 3px;
+}
+.order-section .food-img{
+  height:80px;
+  width:100px;
+  position: absolute;
+}
+.order-section .food-img img{
+  height:80px;
+  width:100px;
+}
+.order-section .food-detail{
+  height:150px;
+  width:370px;
+  position: relative;
+  left:108px;
+}
+.order-section .price{
+  width: 100px;
+  position: relative;
+  left:150px;
+}
+.blog .input{
+  height:38vh;
+  width:45rem;
+}
+/* ...............................................Css for postFood page............................. */
+/* postBox,foodinfo,foodPrice */
+.postBox{
+  width:90%;
+  height:30vh;
+  padding:10px;
+  margin:20vh 20px 10vh 20px;
+  border:2px solid #000;
+  background-color:#e9e1cc;
+  /* display:inline-block; */
+}
+.postBox .fp{display:inline-block;}
+.foodPrice{float:right;
+border:1px solid red;
+padding:10px;
+width:20rem;
+text-align: center;
+}
+.foodPrice .btn{width:7rem;}

@@ -1,0 +1,71 @@
+
+.gridbox{
+  display: grid;
+  grid-template-rows:auto ;
+  grid-template-columns:22% 52% 22% ;
+  margin:4vh 20px ;
+  grid-gap:15px;
+}
+/* OrderHoldbox,order-section(cart-empty,order-item,food-detail,price) */
+.orderSection{
+  margin:0;
+  padding:0;
+  border:1px solid #d8d3cd;
+}
+.Orderbox{
+  background-color:#d8d3cd;
+  padding:10px;
+  font-weight: bold;
+}
+.holdbox span{margin-left:60%;}
+.order-item{
+  padding:10px;
+  display:grid;
+  grid-template-columns:11rem 17rem 20px 22px;
+  grid-template-rows: auto;
+  grid-gap:10px; 
+  border-bottom:1px solid #d8d3cd;
+}
+.delete{
+  height:25px;
+  width: 30px;
+  margin-left:7rem;
+  text-decoration:none;
+  background-color: #d8d8d8;
+  text-align: center;
+  border:none;
+  font-size:1.5rem;
+}
+.fimage img{width:10rem;}
+#cart-empty{visibility: hidden;}
+
+.Payment{
+  border:1px solid #d8d3cd;
+}
+.shophead{
+  font-weight: bold;
+  background-color:#d8d3cd;
+  padding:10px;
+}
+.payment{
+  padding:15px 25px 55px 15px;
+  border-bottom:1px solid #d8d3cd;
+}
+.total-box{text-align: center;
+margin: 4rem auto 10rem auto;
+padding:10px;
+}
+
+.payment input {
+  padding: 8px;
+  display: block;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #e9e1cc;
+  width:80%;
+}
+.total-box .btn{
+  width:10rem;
+  margin-left:25%;
+
+}

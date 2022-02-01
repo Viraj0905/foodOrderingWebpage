@@ -1,0 +1,27 @@
+<%- include('partials/header'); -%>
+<%-include('navBar');-%>
+
+<div class="Menu-bar">
+    <a class="line" href="/">Home</a>
+    <p class="line">/</p>
+    <a class="line" href="#">Track Order</a><hr>
+</div>
+<div class="formBlock">
+<div class="signin trackCss" style="margin-top:10rem;height:22vh"> 
+    <form class="login-form">
+        <div class="reg-form1 track-form">
+            <label class="label1" for="name">Order Number</label>
+            <input class="input1" name="name" type="text" placeholder="Your Order Number">
+        </div>
+        <button class="btn track-btn">Track</button>
+    </form>
+</div>
+
+<div class="sideImg">
+    <h2><%=imgMsg%></h2>
+    <img src="images/delivery-man.jpg" alt="deliveryBoy">
+    <h2>Contact Customer Support</h2>
+    <p>if you'r looking for more help or have a question to ask,please</p>
+</div>
+</div>
+<%-include('partials/footer')-%>

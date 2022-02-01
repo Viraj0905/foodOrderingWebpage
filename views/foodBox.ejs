@@ -1,0 +1,29 @@
+    <!-- .......................................Food card Section............................................ -->
+    <div class="foodContainer ">
+        
+        <% items.forEach(item => { %>            
+            <form action="/foodBox" method="post">
+            <div class="card">
+            <div class="image">
+                <img src="images/bbq.jpg" alt="bbq Image">
+            </div>
+            <div class="foodContain"> 
+            <div class="title">
+                <a href="/postFood/:<%=item.title%>"><%=item.title%></a>
+            </div>
+            <div class="des">
+                <p ><%=item.content%></p>
+            </div>
+            <input type="hidden" name="itemName" value="<%=item.title%>"></input>
+            
+                <div class="sBtn">
+                    <h3 class="i"><%=item.price%>Rs.</h3>
+                    <button class="cardBtn i"  type="submit" name="id" value="<%= item._id%>">Order Now</button>
+                </div>
+            
+        </div>
+        </div></form>       
+        <%  }); %>
+      
+    </div>
+        

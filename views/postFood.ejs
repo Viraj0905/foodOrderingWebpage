@@ -1,0 +1,22 @@
+<%-include('partials/header');-%>
+<%-include('navBar');-%>
+<div class="Menu-bar">
+    <a class="line" href="/">Home</a>
+    <p class="line">/</p>
+    <a class="line" href="#">Food</a>
+    <p class="line">/</p>
+    <a class="line" href="#">Food Detail</a><hr>
+</div>
+<div class="postBox">
+    <div class="foodinfo fp">
+        <h1><%=title%></h1>
+        <p><%=content%></p>
+    </div>
+<div class="foodPrice fp">
+    <p>Total</p>
+    <h2>Rs.<%=price%></h2>
+    <p>Free Shipping</p>
+    <button class="btn">Order Now</button> 
+</div>
+</div>
+<%-include('partials/footer');-%>

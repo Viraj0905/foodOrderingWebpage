@@ -1,0 +1,27 @@
+<%-include('partials/header');-%>
+<%-include('navBar');-%>
+<div class="formBlock">
+<div class="signin" style="height:40vh;">
+    <form class="login-form" action="/login" method="post">
+        <h1>Login</h1>
+        <div class="reg-form1">
+            <label class="label1" for="email">Register number or Email</label>
+            <input class="input1" name="email" type="email" placeholder="Enter your email">
+        </div>
+        <div class="reg-form1">
+            <label class="label1" for="password">Password</label>
+            <input class="input1" name="password" type="Password" placeholder="Password">
+        </div>
+        <button class="btn" type="submit" >Login</button> 
+        <button class="btn" >Register</button>
+    </form>
+
+</div>
+<div class="sideImg">
+    <h2><%=imgMsg%></h2>
+    <img src="bglogo/loader.gif" alt="foodloding">
+    <h2>Contact Customer Support</h2>
+    <p>if you'r looking for more help or have a question to ask,please</p>
+</div>
+</div>
+<%-include('partials/footer');-%>

@@ -1,0 +1,31 @@
+<%-include('partials/header');-%>
+<%-include('navBar');-%>
+<div class="signin">
+    <form class="login-form" action="/AddfoodBox" method="post">
+        <h1>Add New Item</h1>
+        <div class="reg-form1">
+            <label class="label1" for="name">Item Name</label>
+            <input class="input1" name="itemName" type="text" placeholder="Enter Item title">
+        </div>
+        <div class="reg-form1">
+            <label class="label1" for="password">Restaurant Name</label>
+            <input class="input1" name="resturantName" type="text" placeholder="Enter Restaurant Name.">
+        </div>
+        <div class="reg-form1">
+            <label class="label1" for="password">Discribe the food</label>
+            <input class="input1" name="itemContent" type="text" placeholder="Discribe the food.">
+        </div>
+        <div class="reg-form1">
+            <label class="label1" for="password">Price</label>
+            <input class="input1" name="itemPrice" type="text" placeholder="Enter Price to the item.">
+        </div>
+        <div class="reg-form1">
+            <label class="label1" for="password">Date</label>
+            <input class="input1" name="O_date" type="text" placeholder="Enter a Date .">
+        </div>
+        <button class="btn" type="submit" name="submit">Add</button> 
+    </form>
+</div>
+<div style="margin-bottom: 40%;"></div>
+
+<%-include('partials/footer');-%>

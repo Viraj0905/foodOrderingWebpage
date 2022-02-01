@@ -1,0 +1,272 @@
+
+/*.................................................. NavBar Content All.......................................... */
+body{
+    font-family: 'Della Respira';
+}
+#navbar{
+    overflow: hidden;
+    background-color: #333;
+    height:65px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: .9;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  
+.logo p{
+    color:#fa1616;
+    text-align: center;
+    padding: 14px 16px;
+    font-size:1.3rem;
+    font-weight:bold;
+}
+.list{
+    display: inline-block;
+}
+.content{
+    margin-left: 32%;
+}
+.content a{ 
+    color:#f2f2f2 ;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 17px;
+}
+/* link dropdown  */
+.link-btn{
+    cursor:pointer;
+}
+.link-btn:hover, .link-btn:focus{
+    color:#fa1616 ;
+}
+.drop-down{
+    position: relative;
+    display:inline-block;
+}
+.link-down{
+    display:none;
+    position:absolute;
+    background-color:#333;
+    min-width:10%;
+    box-shadow:0 8px 16px rgba(0,0,0,0.2);
+    z-index:1;
+}
+.link-down a{
+    color:#f2f2f2;
+    text-decoration: none;
+    padding:12px 16px;
+    display:block;
+}
+.link-down a:hover{background-color:#4a3f35;}
+.show{display:block;}
+  /*..........................................End of NavBar.......................................................  */
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  /* .sticky + .content {
+    padding-top: 60px;
+  } */
+.SearchSection{
+    padding:16px;
+    height:90vh;
+    background:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url("../images/bg1o1.png") no-repeat fixed center;
+    text-align: center;
+    color:#fff;
+}
+.wrap{
+    margin-top:5%;
+}
+.wrap h1,p,form{
+    padding:10px 0px;
+}
+.wrap h1{
+    font-family: 'Delius Swash Caps';
+    font-size: 3rem;
+    font-weight:400;
+}
+.wrap span{
+ font-size: 25px;   
+}
+/* Search bar */
+
+.SearchBar input,.searchBtn{
+    padding:15px 20px;
+    font-size:16px;
+    border:none;
+    outline:none;
+}
+.SearchBar .searchBtn{
+    text-align:center;
+    text-decoration: none;
+    color:#fff;
+    background-color: #FF4301;
+    padding:16px 20px;
+}
+.SearchBar .searchBtn:hover{
+    opacity:0.9;
+}
+.wrap .design{
+    display: inline-block;
+    margin-top: 5%;
+}
+.wrap .p{
+    padding-left: 90px;
+}
+.wrap .para{
+    font-family: 'Fontdiner Swanky';
+    display:block;
+    font-size:15px;
+    padding-top: -20px;
+}
+.breakText{
+    text-align:center;
+}
+.breakText a{
+    color:#FF4301;
+    text-decoration: none;
+}
+/* Popular food of week in your city */
+/* fooodContener,foodBox */
+/* ......................................................FoodSection............................................... */
+.FoodSection{
+    text-align: center;
+    margin-top: 5%;
+    padding: 2% 1%;
+}
+.foodContainer{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:5px;         
+}
+ .foodContain{
+    padding: 10px;
+} 
+.card{
+    background-color: #f5efef;
+    width:87%;
+    text-align: left;
+    margin-left: 10px;
+}
+.title a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color:#000;
+}
+.title a:hover{
+    color:#FF4301;
+    transition: .5s;
+}
+.image img{
+    width:100%;
+}
+.sBtn{
+    margin-top: 10px;
+}
+.sBtn .i{
+    display: inline-block;
+}
+.sBtn h3{
+    font-weight: bold;
+}
+.cardBtn{
+   margin:-5px auto 10px 50%;
+   padding: 7px;
+   border: 2px dashed #ffac41;
+   background-color: #fff;
+   cursor:pointer;
+   font-size: 20px;
+}
+.cardBtn:hover{
+    background-color: #ffac41;
+    color:#fff;
+    transition: .5s;
+}
+/* ..........................................Footer........................................................ */
+.footer{
+    width:100%;
+    color:#fff;
+    position: relative;
+   left: 0;
+   bottom: 0;
+}
+.fHeader h2{
+    margin-top:50px ;
+    text-align: center;
+    padding: 30px;
+    color:#fff;
+}
+.fHeader{
+    background-color: #383e56;
+
+}
+.stepOrder{
+    margin-top: 10%;
+    color:#fff;
+    width:20%;
+    text-align: center;
+}
+.mark{
+    text-decoration: none;
+    border:2px solid #fff;
+    border-radius: 50%;
+    background-color: #383e56;
+    padding: 1.9rem;
+}
+.stepOrder h3{
+    margin-top: 50px;
+}
+.stepOrder{
+    display:inline-block;
+    margin-left:170px;
+    /* border:5px solid #000;*/
+} 
+.stepOrder:nth-child(1){
+    margin-left:90px;
+}
+/* .stepOrder:nth-child(2){
+    margin-top:60px;
+} */
+/* cash on deleviery text */
+ .Cdel{
+    margin-top: 50px;
+    text-align: center;
+    color:#fff;
+}
+.cityImg{
+    height:10rem;
+    background: url("../images/city1.png") repeat ;
+    width:100%;
+    opacity:.5 ;
+}
+/* ..................................About Section .......................................................... */
+.aboutSection{
+    width:97%;
+    padding: 20px;
+    text-align: center;
+    background-color: #383e56;
+
+}
+.Set{
+    display:inline-block;
+    text-align: left;
+    padding: 10px;
+}
+ .subSet a{
+    text-decoration: none;
+    color:#fff;
+    padding: 8px;
+    margin-left: 90px;
+    display:block;
+}
+.Set h3{
+    text-align: right;
+}
+.Set .Active{
+    color:#FF4301;
+}

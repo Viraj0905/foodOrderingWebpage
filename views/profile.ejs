@@ -1,0 +1,52 @@
+<%-include('partials/header');-%>
+<%-include('navBar');-%>
+<div class="Menu-bar">
+    <a class="line" href="/">Home</a>
+    <p class="line">/</p>
+    <a class="line" href="#">Profile</a><hr>
+</div>
+
+<div class="signin" style="height:80vh;margin-top: 5px;">
+
+  <form class="reg-form">
+    <h1>Registor Form</h1>
+
+    <div class="reg-form1">
+      <label for="fname" class="label1">First Name</label>
+      <input class="input1" type="text" name="fname" placeholder="Enter your First Name">
+    </div>
+
+    <div class="reg-form1">
+      <label for="" class="label1">Last Name</label>
+      <input class="input1" type="text" placeholder="Last Name ">
+    </div>
+
+    <div class="reg-form1">
+      <label for="email" class="label1">Email address</label>
+     <input class="input1" type="text" name="email"placeholder="Enter your email">
+      <p>We'll never share your email with anyone else</p>
+    </div>
+
+    <div class="reg-form1">
+      <label for="mobile" class="label1">Mobile Number</label>
+      <input class="input1" type="tel" name="mobile" placeholder="Enter your Mobile number">
+      <p>We'll never share your mobile number with anyone else</p>
+    </div>
+
+    <div class="reg-form1">
+      <label for="" class="label1">Registration Date</label>
+      <input class="input1" type="text" placeholder="Todays day">
+    </div>
+
+    <button class="btn" style="display:block;">Update</button>
+  </form>
+
+</div>
+<div class="sideImg">
+  <h2><%=imgMsg%></h2>
+  <img src="bglogo/bg12.webp" alt="foodloding">
+  <h2>Contact Customer Support</h2>
+  <p>if you'r looking for more help or have a question to ask,please</p>
+</div>
+  <div style="margin-top: 10vh;"></div>
+<%-include('partials/footer');-%>

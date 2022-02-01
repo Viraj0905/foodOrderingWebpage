@@ -1,0 +1,30 @@
+Food Ordering System
+pages= home,login,registration,ordering,profile,cart//
+(ServerSidePages=login,AddItem,EditItem,ExcptingOrder,)
+home=Navvbar=>home,
+
+
+.fooodContener{
+    display: grid;
+}
+.foodBox{
+    height:10vh;
+    width:20rem;
+    border-radius: 1px solid #000;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    padding: 10px;
+}
+.foodBox img{
+    height:70px;
+    width:70px;
+    border-radius: 1px solid #000;
+}
+.food-btn{
+    padding:10px;
+    text-align: center;
+    background-color: #fa7d09;
+    border-radius: 1px solid #ff4301;
+    text-decoration: none;
+    width: 70px;
+}

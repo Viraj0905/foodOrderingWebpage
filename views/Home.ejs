@@ -1,0 +1,48 @@
+<%- include('partials/header'); -%>
+<%- include('navBar'); -%>
+<div class="SearchSection">
+    <div class="wrap">
+    <h1>Order &nbsp; Delivery</h1>
+    <p>Find your Favouite delicious hot food <span>!</span></p>
+    <form class="SearchBar" action="/" method="post">
+        <input type="text" name="foodName" placeholder="I would like to eat ....">
+        <button  class="searchBtn" type="submit" name="button">Search Food</button>
+        <!-- <i class="fa fa-search"></i> -->
+    </form>
+    <span class="design"><i class="fas fa-hotel"></i><p class="para">Choose Location </p></span>
+    <span class="design p"><i class="fas fa-concierge-bell "></i><p class="para">Oder Food </p></span>
+    <span class="design p"><i class="fas fa-truck "></i><p class="para">Delivery</p></span>
+</div>
+</div>
+<p class="breakText">Popular Delicious Foods Here: <a href="#">All over india</a> </p><hr>
+<!-- ...................................................Food Section........................................... -->
+<section class="FoodSection">
+
+    <h2>Popular this month in your city</h2>
+    <p>The easier way to get your favourite food.</p>
+<%-include('foodBox');-%>
+</section>
+<div class="fHeader">
+    <h2>Easy 3 Step Order</h2>
+
+<div class="stepContainer">
+<div class="stepOrder">
+    <span class="mark"><i class="fas fa-hotel fa-2x"></i></span>
+    <h3>Choose tasty dish</h3>
+    <p>We've got covered with menus from over 345 dilicious food online. </p>
+</div>
+<div class="stepOrder">
+    <span class="mark"><i class="fas fa-concierge-bell fa-2x"></i></span>
+    <h3>Fill your location</h3>
+    <p>We've got covered with menus from over 345 dilicious food online. </p>
+</div>
+<div class="stepOrder">
+    <span class="mark"> <i class="fas fa-truck fa-2x "></i></span>
+    <h3>Food Delivery</h3>
+    <p>We've got covered with menus from over 345 dilicious food online. </p>
+</div>
+</div>
+<p class="Cdel"><strong>Pay by cash on delivery</strong></p>
+<div class="cityImg"></div>
+</div> 
+<%- include('partials/footer'); -%>

@@ -1,0 +1,67 @@
+<%-include('partials/header');-%>
+<%-include('navBar');-%>
+<div class="Menu-bar">
+    <a class="line" href="/">Home</a>
+    <p class="line">/</p>
+    <a class="line" href="#">Cart</a>
+    <p class="line">/</p>
+    <a class="line" href="#">Cart Details</a><hr>
+</div>
+
+<div class="gridbox">
+<%-include('sideBarSort');-%>
+
+<div class="orderSection">
+  <div class="Orderbox">
+    <p class="holdbox" >Your ORDERS Delicious hot food ! <span><i class="fas fa-angle-down"></i></span></p>
+  </div>
+    <p id="cart-empty">Your cart is empty!</p>
+      <% items.forEach(item => { %>
+        <form action="/delete" method="POST">
+        <div class="order-item">
+          <div class="fimage">
+            <img src="food-images/paratha1.jfif" alt="paratha-image">
+          </div>
+        <div class="food-detail">
+          <p> <strong><%=item.title%></strong> <br>
+            <%=item.content%>
+          </p>
+        </div>
+  <input type="hidden" name="id" value="<%=item._id%>"></input>
+        <div class="price ">
+          <p> <strong><%=item.price%>Rs.</strong> </p>
+        </div>
+        <button class="delete" type="submit">-</button>  
+      </div>
+    </form>
+      <% }); %>
+      
+
+</div>
+
+<div class="orderLocation">
+
+  <div class="Payment ">
+      <p class="shophead">Your Shopping Cart</p>
+      <div  class=payment>
+      <form  action="/cart" method="post">
+        <input type="text" name="flatNo"  placeholder="FlatNo.">
+        <input type="text" name="streetName"  placeholder="Street Name">
+        <input type="text" name="area"  placeholder="Area">
+        <input type="text" name="landMark"  placeholder="Landmark if any">
+        <input type="text" name="city"  placeholder="City">
+      </div>
+      
+      <div class="total-box">
+        <h4>Total</h4>
+        <h3>204 Rs</h3>
+        <p></p>
+        <button type="submit" name="submit" class="btn">Place order</button>
+      </div>
+    </form>
+    </div>
+</div>
+
+</div>
+    
+<%-include('partials/footer');-%>
